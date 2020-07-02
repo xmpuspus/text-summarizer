@@ -22,6 +22,7 @@ keywords_list = keywords(text, ratio=ratio).split("\n")
 if not summary:
     st.write("Input a longer paragraph.")
 else:
+    st.subheader("Summary")
     st.write(summary)
-    st.write("Keywords: " + ", ".join("`" + i + "`" for i in keywords_list))
+    st.markdown("**Keywords:** " + ", ".join("`" + i + "`" for i in keywords_list))
 
