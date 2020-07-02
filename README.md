@@ -27,4 +27,4 @@ foo@bar:~$ streamlit run app.py
 
 The web app should look something like this:
 
-![Sample image of the text summarizer web application.](images/sumarizer_webapp.png)
+![Sample image of the text summarizer web application.](images/summarizer_webapp.png)
