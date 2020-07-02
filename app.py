@@ -1,5 +1,5 @@
 import streamlit as st
-from gensim.summarization import summarize
+from gensim.summarization import summarize, keywords
 
 
 # Header
@@ -18,9 +18,10 @@ text = st.text_area("Input long paragraph", """Thomas A. Anderson is a man livin
 
 # Summarize
 summary = summarize(text, ratio=ratio)
-
+keywords_list = keywords(text, ratio=ratio).split("\n")
 if not summary:
     st.write("Input a longer paragraph.")
 else:
     st.write(summary)
+    st.write("Keywords: " + ", ".join("`" + i + "`" for i in keywords_list))
 
