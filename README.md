@@ -3,7 +3,7 @@ Author: Xavier M. Puspus
 
 
 ### Description
-I used a text summarizer based off of [this paper](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf). I built a web application that summarizes english text.
+I used a text summarizer based off of [this paper](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf). I built a web application that summarizes english text from plain text or url parsing. Link to the text summarizer can be found [here](https://text-summarizer-textrank.herokuapp.com/).
   
 
 ### Deployment Through Web Application
