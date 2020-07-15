@@ -39,9 +39,8 @@ if input_text_type=="Text":
         
 else:
     # Link input
-    st.subheader("Summary")
     link = st.text_input("Input website/link here:", "https://www.osapabroad.com/academics/the-oxford-tutorial/")
-    
+    st.subheader("Summary")
     LANGUAGE = "english"
     SENTENCES_COUNT = st.sidebar.slider("Sentence Count", 1, 20, 10, 1)
     kw_ratio = st.sidebar.slider("Keyword Ratio: ", 0., 1., 0.2, 0.01)
